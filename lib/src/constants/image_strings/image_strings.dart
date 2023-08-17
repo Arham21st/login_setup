@@ -8,3 +8,4 @@ const String pc4 = "assets/images/pc1.jpg";
 const String welcomimage = "assets/images/welcom.png";
 const String logo = "assets/images/logo.png";
 const String googleLogo = "assets/images/google.png";
+const String profile = "assets/images/profile.jpg";

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_setup/src/utils/theme/themes_widgets/appbar_theme.dart';
 import 'package:login_setup/src/utils/theme/themes_widgets/buttons_theme.dart';
 import 'package:login_setup/src/utils/theme/themes_widgets/text_field_theme.dart';
 import 'package:login_setup/src/utils/theme/themes_widgets/text_theme.dart';
@@ -14,13 +15,17 @@ class AppTheme{
     outlinedButtonTheme: AppButtonTheme.lightOutlineButtonTheme,
     elevatedButtonTheme: AppButtonTheme.lightElevatedButtonTheme,
     inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme,
+    appBarTheme: AppbarTheme.lightAppbarTheme
+    
+    
   );
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     textTheme: AppTextTheme.darkTextTheme,
     outlinedButtonTheme: AppButtonTheme.darkOutlineButtonTheme,
     elevatedButtonTheme: AppButtonTheme.darkElevatedButtonTheme,
-    inputDecorationTheme: AppTextFormFieldTheme.darkInputDecorationTheme
+    inputDecorationTheme: AppTextFormFieldTheme.darkInputDecorationTheme,
+    appBarTheme: AppbarTheme.darktAppbarTheme
   );
 
 }

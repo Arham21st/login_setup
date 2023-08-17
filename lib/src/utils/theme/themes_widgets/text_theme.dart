@@ -19,7 +19,9 @@ class AppTextTheme{
       titleLarge: GoogleFonts.montserrat(
         color: Colors.black87
         
-      ) 
+        
+      ),
+      
     );
 
     
@@ -38,6 +40,7 @@ class AppTextTheme{
       titleLarge: GoogleFonts.montserrat(
         color: Colors.white70
         
-      )  
+      ),
+      
     );
 }

@@ -1,9 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_setup/src/features/authentication/view/splash/splash_screen.dart';
+import 'package:login_setup/firebase_options.dart';
+import 'package:login_setup/src/features/authentication/controllers/firebase/firebase_controller.dart';
 import 'package:login_setup/src/utils/theme/theme.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then((value) => Get.put(FirebaseController()));
   runApp(const MyApp());
 }
 
@@ -21,7 +25,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(milliseconds: 500),
-      home: const SplashScreen(),
+      home: const Center(child: CircularProgressIndicator()),
     );
   }
 }
